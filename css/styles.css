@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  height: 100vh;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(53, 58, 64);
+  padding: 1.2rem 5rem;
+  height: 12%;
+}
+
+.logoContainer {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logoContainer img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.logoContainer h2 {
+  color: white;
+}
+
+.navigation ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.listItem {
+  padding-left: 1.3rem;
+}
+
+.linkNav1 {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.linkNav2 {
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.linkNav3 {
+  color: rgb(38, 167, 67);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.linkNav1:hover,
+.linkNav2:hover,
+.linkNav3:hover {
+  color: rgb(130, 130, 223);
+}
+
+.conferenceContainer {
+  background: linear-gradient(to right, #0000009c, #0000009c),
+    url('../assets/img/ba1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 88%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.conferenceChild {
+  padding-right: 5rem;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.conferenceChild h1 {
+  color: white;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.conferenceText {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: white;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.conferenceButtons {
+  text-align: right;
+  margin: 1rem 0.2rem;
+}
+
+.speakerRegister {
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.speakerRegister:hover {
+  color: rgb(41, 167, 68);
+  border: 1px solid rgb(41, 167, 68);
+}
+
+.buyTickets {
+  background-color: rgb(41, 167, 68);
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid rgb(41, 167, 68);
+}
+
+.buyTickets:hover {
+  color: rgb(41, 167, 68);
+  background-color: white;
+}
+
+#speakers h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.smallTextSpeakers {
+  font-size: 0.8rem;
+}
+
+.cardsParent {
+  margin-top: 50px;
+  text-align: center;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.card {
+  display: inline-block;
+  background-color: white;
+  width: 30%;
+  height: 75%;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.cardBody {
+  margin: 15px;
+}
+
+.cardBody p {
+  margin-top: 1rem;
+}
+
+.javascriptLabel {
+  display: inline-block;
+  padding: 0.3rem;
+  border-radius: 4px;
+  background-color: rgb(254, 193, 6);
+}
+
+.reactLabel {
+  display: inline-block;
+  padding: 0.3rem;
+  border-radius: 4px;
+  background-color: rgb(23, 162, 183);
+  color: white;
+}
+
+.businessLabel {
+  display: inline-block;
+  padding: 0.3rem;
+  border-radius: 4px;
+  background-color: rgb(110, 117, 127);
+  color: white;
+}
+
+.startupsLabel {
+  display: inline-block;
+  padding: 0.3rem;
+  border-radius: 4px;
+  background-color: rgb(221, 53, 68);
+  color: white;
+}
+
+.placeDate {
+  display: flex;
+  flex-direction: row;
+}
+
+.place {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: none;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: none;
+  background-color: rgb(53, 58, 64);
+  padding: 1rem;
+}
+
+.date h2 {
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.dateText {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: white;
+  text-align: left;
+}
+
+.learnMore {
+  width: fit-content;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.learnMore:hover {
+  color: rgb(130, 130, 223);
+  border: 1px solid rgb(130, 130, 223);
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#form h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.smallTextForm {
+  font-size: 0.8rem;
+}
+
+#form h3 {
+  padding-bottom: 1rem;
+}
+
+u {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.theForm {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.theInputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.theInputs input {
+  width: 24vw;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+textarea {
+  padding: 0.7rem;
+  width: 50vw;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  max-width: 50vw;
+  height: 20vh;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+.formButton input {
+  background-color: rgb(150, 201, 62);
+  color: white;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  width: 50vw;
+  font-size: 1.8rem;
+  border-radius: 6px;
+  border: 1px solid rgb(150, 201, 62);
+}
+
+.formButton input:hover {
+  color: rgb(150, 201, 62);
+  background-color: white;
+  cursor: pointer;
+}
+
+footer {
+  background-image: linear-gradient(
+    to right,
+    #1d3744,
+    #1d3e4f,
+    #1d455a,
+    #1d4c66,
+    #1e5372
+  );
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 12rem;
+}
+
+.footerNav a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  max-width: 102px;
+  text-align: center;
+}
+
+.footerNav a:hover {
+  color: rgb(130, 130, 223);
+}
+
+.icon {
+  color: rgb(50, 217, 81);
+  font-size: 5rem;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.icon:hover {
+  color: rgb(130, 130, 223);
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: fit-content;
+  }
+
+  .navContainer {
+    flex-direction: column;
+    height: initial;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logoContainer h2 {
+    flex-shrink: 0;
+  }
+
+  .navigation .navList {
+    flex-direction: column;
+  }
+
+  .listItem {
+    margin: 0.5rem;
+    padding: 0;
+  }
+
+  .conferenceContainer {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .conferenceChild {
+    padding-right: 0rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .conferenceText {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .cardsParent {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .placeDate {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .place {
+    width: 100%;
+  }
+
+  .date {
+    width: 100%;
+  }
+
+  .theForm {
+    width: 80vw;
+  }
+
+  .theInputs {
+    flex-direction: column;
+  }
+
+  .theInputs input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100vw;
+    max-width: 100%;
+  }
+
+  #form h3 {
+    width: 80vw;
+  }
+
+  .formButton {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerNav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerNav a {
+    margin: 0.5rem;
+  }
+
+  .icon {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .conferenceText {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .card {
+    height: 90%;
+  }
+
+  .conferenceChild {
+    justify-content: space-between;
+  }
+
+  textarea {
+    font-size: 1.5rem;
+  }
+}
